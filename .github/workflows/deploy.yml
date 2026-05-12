@@ -40,10 +40,10 @@ jobs:
           -out=PLAN
         working-directory: ./terraform
       - name: Terraform destroy
-        id: apply
+        id: destroy
         run: |
-          terraform plan -destroy -out=PLAN \
-          terraform apply PLAN
+          terraform plan -destroy -out=PLAN
+          terraform apply -auto-approve PLAN
         working-directory: ./terraform
 
 

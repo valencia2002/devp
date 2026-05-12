@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/Checkoutv@4
+        uses: actions/Checkout@v4
       - name: Setup Terraform
         uses: hashicorp/setup-Terraform@v1
         with:

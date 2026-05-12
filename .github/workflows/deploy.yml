@@ -41,7 +41,9 @@ jobs:
         working-directory: ./terraform
       - name: Terraform destroy
         id: apply
-        run: terraform destroy PLAN
+        run: |
+          terraform plan -destroy -out=PLAN \
+          terraform apply PLAN
         working-directory: ./terraform
 
 

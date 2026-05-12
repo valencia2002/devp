@@ -15,7 +15,7 @@ env:
 
 jobs:
   deploy-infra:
-    runs-on: ubunutu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/Checkoutv@4
